@@ -1,0 +1,32 @@
+/* Configuração do projeto */
+SistemaAutomovel/.env
+SistemaAutomovel/config/app.php
+SistemaAutomovel/resources/lang/en/validation.php
+
+/* Criar estrutura lógica */
+php artisan make:model Automovel -r -c -m
+
+/* Rodar migrações */
+php artisan migrate:refresh
+
+/* Controller */
+SistemaAutomovel/app/Http/Controllers/AutomovelController.php
+
+/* Configuração para resolver problema de limite de dados no banco */
+SistemaAutomovel/app/Providers/AppServiceProvider.php
+
+/* Configurar chamada do controller */
+SistemaAutomovel/routes/web.php
+
+/* Migrations */
+SistemaAutomovel/database/migrations/2014_10_12_000000_create_users_table.php
+SistemaAutomovel/database/migrations/2019_08_19_000000_create_failed_jobs_table.php
+SistemaAutomovel/database/migrations/2020_03_25_223949_create_automovels_table.php
+
+/* Views */
+SistemaAutomovel/resources/views/automovel/index.blade.php
+SistemaAutomovel/resources/views/automovel/create.blade.php
+SistemaAutomovel/resources/views/automovel/edit.blade.php
+SistemaAutomovel/resources/views/automovel/show.blade.php
+SistemaAutomovel/resources/views/master.blade.php
+
